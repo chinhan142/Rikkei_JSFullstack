@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Nộp hồ sơ ứng tuyển</h1>
+    <form enctype="multipart/form-data" action="\">
+      <fieldset>
+        <legend>Thông tin liên hệ</legend>
+        Họ và tên:
+        <input type="text" />
+
+        <br /><br />
+
+        Số điện thoại:
+        <input
+          type="tel"
+          pattern="^0[1-9]\d{8}$"
+          title="Required 10 numbers start with 0"
+          placeholder="0912345678"
+        />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Hồ sơ đính kèm</legend>
+        Tải lên CV (Định dạng PDF/Word):
+        <input type="file" accept=".pdf,.doc,.docx" />
+      </fieldset>
+
+      <br />
+
+      <button type="submit">Nộp hồ sơ</button>
+    </form>
+  </body>
+</html>
