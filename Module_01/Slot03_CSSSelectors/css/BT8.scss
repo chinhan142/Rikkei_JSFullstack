@@ -1,0 +1,60 @@
+.wrapper {
+  background-color: #f9f9f9;
+  width: fit-content;
+  padding: 50px;
+  margin: 20px auto;
+
+  .quote {
+    position: relative;
+    width: 650px;
+    text-align: justify;
+    margin: 20px auto;
+    line-height: 1.8;
+    font-size: 1.4rem;
+    padding: 40px 60px;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    border-left: #2980b5 solid 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    color: #555;
+    font-style: italic;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    &::first-letter {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #2980b5;
+      float: left;
+      line-height: 1;
+      margin-right: 10px;
+      font-style: italic;
+    }
+
+    &::before {
+      content: "\201C";
+      position: absolute;
+      left: 20px;
+      top: 35px;
+      font-size: 60px;
+      color: #ccc;
+      font-family: serif;
+    }
+
+    &::after {
+      content: "\201D";
+      position: absolute;
+      right: 25px;
+      bottom: 70px;
+      font-size: 60px;
+      color: #ccc;
+      font-family: serif;
+    }
+
+    .author {
+      text-align: right;
+      font-style: normal;
+      color: grey;
+      font-weight: bold;
+    }
+  }
+}
