@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+div {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 40px;
+  margin-top: 20px;
+
+  section {
+    padding: 20px;
+    padding-top: 10px;
+    border: 2px #588fb1 solid;
+    background-color: white;
+    border-radius: 6px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    p {
+      &:nth-of-type(1) {
+        text-align: justify;
+      }
+
+      &:nth-of-type(2) {
+        color: orangered;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    }
+  }
+}
