@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin-top: 20px;
+
+  background-color: #f0f9ff;
+  width: 100%;
+
+  padding: 20px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: stretch; // height equals
+
+      .booking-form,
+      .dental-description {
+        flex: 1;
+        width: auto;
+        height: auto;
+      }
+    }
+
+    .booking-form {
+      width: 100%;
+      max-width: 600px;
+
+      background-color: #ffffff;
+      border-radius: 5px;
+
+      h2 {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      form {
+        padding: 30px;
+
+        p {
+          font-weight: 650;
+          color: grey;
+        }
+
+        input {
+          border: 1px rgba(100, 100, 111, 0.2) solid;
+          border-radius: 5px;
+
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        select {
+          border: 1px rgba(100, 100, 111, 0.2) solid;
+
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        button {
+          width: 100%;
+          text-align: center;
+
+          margin-top: 10px;
+          padding: 15px;
+
+          border-radius: 5px;
+
+          background-color: #27a745;
+          color: white;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .dental-description {
+      border-radius: 5px;
+      background-color: #017bfe;
+      color: white;
+
+      padding: 30px;
+
+      // lesson learned: set width to 100% and max-width to provide full width
+      width: 100%;
+      max-width: 600px;
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+
+      p {
+        text-align: justify;
+
+        margin-bottom: 10px;
+
+        line-height: 1.5;
+      }
+    }
+  }
+}
