@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+section {
+  width: 500px;
+  border: 1px solid;
+  margin: 20px auto;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 20px;
+
+  h1 {
+    font-weight: bolder;
+  }
+
+  p {
+    line-height: 1.5;
+    text-align: justify;
+  }
+}

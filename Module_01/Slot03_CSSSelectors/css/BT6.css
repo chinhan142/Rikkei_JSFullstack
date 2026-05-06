@@ -1,0 +1,23 @@
+.outer-box {
+  background-color: rgba(168, 161, 156, 0.612);
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+.ads-card {
+  background: #e0d8c4 url("../images/capheads.jpg") no-repeat right top;
+  width: 500px;
+  border-radius: 10px;
+  border: #d39801 solid;
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ads-card h1 {
+  color: #b31d1d;
+  text-align: center;
+}

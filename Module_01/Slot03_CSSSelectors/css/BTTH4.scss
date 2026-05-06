@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+section {
+  border: rgb(128, 128, 128) solid 1px;
+  width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 6px;
+  line-height: 1.6;
+
+  h1 {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    & + p {
+      color: #667172;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
+      letter-spacing: 2px;
+      text-align: justify;
+    }
+  }
+
+  & > ul > li {
+    color: orangered;
+
+    & > a {
+      text-decoration: none;
+      color: orangered;
+    }
+
+    & > ul > li {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

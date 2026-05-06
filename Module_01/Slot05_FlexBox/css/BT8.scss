@@ -1,0 +1,46 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  background-color: #222222;
+
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    // gap: 20px;
+    align-content: space-around;
+    padding: 50px;
+
+    flex-wrap: wrap;
+
+    max-width: 950px;
+    height: 1000px;
+
+    background-color: #313233;
+    border-radius: 10px;
+
+    img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}

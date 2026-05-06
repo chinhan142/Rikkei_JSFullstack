@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex flex-col md:flex-row">
+      <!-- Sidebar -->
+      <div class="bg-[#111727] p-4 leading-10 h-svh w-80 hidden md:block">
+        <p class="text-white font-bold text-2xl mb-10 text-center">
+          TechGadget Admin
+        </p>
+        <p class="text-white font-bold bg-blue-600 py-1 px-2 rounded-md">
+          Tổng quan
+        </p>
+        <p class="text-white font-bold py-1 px-2">Đơn hàng</p>
+        <p class="text-white font-bold py-1 px-2">Sản phẩm</p>
+        <p class="text-white font-bold py-1 px-2">Khách hàng</p>
+      </div>
+
+      <!-- Main Dashboard -->
+      <div class="w-full">
+        <div class="p-5">
+          <input
+            type="text"
+            placeholder="Tìm kiếm mã đơn hàng, sản phẩm..."
+            class="w-96 border-solid border-gray-100 border-2 p-2 shadow-md rounded-md"
+          />
+        </div>
+
+        <div class="bg-gray-50 h-svh">
+          <h2 class="font-bold text-2xl p-5">Tổng quan hệ thống</h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pl-5 pr-5"
+          >
+            <div
+              class="bg-white border-solid border-2 border-gray-100 shadow-md rounded-md p-5 leading-8 min-w-0"
+            >
+              <p class="font-bold text-gray-400">Tổng doanh thu</p>
+              <p class="font-bold text-2xl break-words">125.000.000đ</p>
+            </div>
+
+            <div
+              class="bg-white border-solid border-2 border-gray-100 shadow-md rounded-md p-5 leading-8 min-w-0"
+            >
+              <p class="font-bold text-gray-400">Đơn hàng mới</p>
+              <p class="font-bold text-2xl break-words">342</p>
+            </div>
+
+            <div
+              class="bg-white border-solid border-2 border-gray-100 shadow-md rounded-md p-5 leading-8 min-w-0"
+            >
+              <p class="font-bold text-gray-400">Khách hàng truy cập</p>
+              <p class="font-bold text-2xl break-words">1,204</p>
+            </div>
+
+            <div
+              class="bg-white border-solid border-2 border-gray-100 shadow-md rounded-md p-5 leading-8 min-w-0"
+            >
+              <p class="font-bold text-gray-400">Tỉ lệ chuyển đổi</p>
+              <p class="font-bold text-2xl break-words">4.5%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
